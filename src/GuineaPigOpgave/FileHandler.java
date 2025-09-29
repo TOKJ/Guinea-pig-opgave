@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileHandler {
-
     //private BufferedReader br;
     //private String fileName;
 
