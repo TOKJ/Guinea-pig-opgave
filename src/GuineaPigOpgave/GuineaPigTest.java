@@ -12,6 +12,7 @@ public class GuineaPigTest {
 
         String indhold = fh.readFromFile(fileName);
         System.out.println("TEST");
+        System.out.println(indhold);
     }
 
 
