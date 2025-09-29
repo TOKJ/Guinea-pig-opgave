@@ -15,7 +15,7 @@ public class GuineaPig {
 
     @Override
     public String toString() {
-        return "Name: " + name + "\nRace: " + race + "\nDaily amount of food: " + food
+        return "Name: " + name + "\nRace: " + race + "\nDaily amount of food: " + food;
     }
 
 }
