@@ -16,6 +16,10 @@ public class GuineaPigTest {
 
         //ERIK KOMMENTAR TEST
 
+        //Endnu en fed kommentar fra Erik!
+
+
+
     }
 
 
