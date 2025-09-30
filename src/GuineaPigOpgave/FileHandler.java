@@ -3,9 +3,18 @@ package GuineaPigOpgave;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class FileHandler {
-    //private BufferedReader br;
+    private BufferedReader br;
+/*
+    //Konstruktør
+    public FileHandler() {
+        this.br = new BufferedReader(new FileReader(""));
+    }
+
+    */
+
     //private String fileName;
 
     //vi prøver at lave det uden konstruktør
@@ -41,4 +50,23 @@ public class FileHandler {
         return sb.toString();
     }
 
+    public ArrayList<String> readFromFileToStringArray(String fileName) {
+        ArrayList<String> StringArray = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
+        try (BufferedReader br = new BufferedReader( new FileReader(fileName) )){
+            String line;
+            while ((line = br.readLine()) != null) {
+                StringArray.add(line);
+
+            }
+        } catch (IOException e) {
+            System.out.println("Fejl: " + e.getMessage());
+        }
+        return StringArray
+    }
+/*
+    public String readLine(String fileContent) {
+        while ((line = fileContent.readline()))
+    }
+*/
 }
