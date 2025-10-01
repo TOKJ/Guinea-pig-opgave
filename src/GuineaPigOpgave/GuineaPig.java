@@ -13,9 +13,26 @@ public class GuineaPig {
     }
 
 
+
+    //getters. Tester lige :)
+
+    public String getName() {
+        return name;
+    }
+
+    public String getRace() {
+        return race;
+    }
+
+    public int getFood() {
+        return food;
+    }
+
+
+
     @Override
     public String toString() {
-        return "Name: " + name + "\nRace: " + race + "\nDaily amount of food: " + food;
+        return "\n\n" +"Name: " + name + "\nRace: " + race + "\nDaily amount of food: " + food + " grams.";
     }
 
 }
